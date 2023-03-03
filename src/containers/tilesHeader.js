@@ -1,6 +1,5 @@
 import anime from 'animejs/lib/anime.es.js';
 import { useState } from 'react';
-import Tile from '../components/Tile';
 
 const TilesHeader = () => {
     
@@ -29,8 +28,6 @@ const TilesHeader = () => {
         })
     }
 
-    
-
     return ( 
         <div 
             style={{
@@ -42,8 +39,6 @@ const TilesHeader = () => {
             {Array.from(Array(columns * rows)).map((tile, index) => {
                 return <div className="tile" onClick={(e) => handleOnClick(index)}></div>;
             })}
-            {console.log(columns)}
-            {console.log(rows)}
         </div>
     );
 }
