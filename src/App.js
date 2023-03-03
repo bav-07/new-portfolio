@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import './tiles.js'
-import tilesHeader from './containers/tilesHeader';
+import TilesHeader from './containers/TilesHeader';
 
 function App() {
   return (
     <>
-      <tilesHeader />
+      <TilesHeader/>
     </>
   );
 }
