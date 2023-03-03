@@ -20,7 +20,7 @@ const TilesHeader = () => {
         anime({
             targets: ".tile",
             opacity: [{value: 0.5, duration: 500},
-            {value: 0.8, duration: 500}],
+            {value: 0.9, duration: 500}],
             delay: anime.stagger(50, {
                 grid: [columns, rows],
                 from: index
