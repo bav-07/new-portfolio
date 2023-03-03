@@ -19,11 +19,12 @@ const TilesHeader = () => {
   
         anime({
             targets: ".tile",
-            scale: [{value: 0.5, duration: 500},
+            scale: [{value: 0.92, duration: 300},
             {value: 1, duration: 500}],
-            delay: anime.stagger(100, {
+            delay: anime.stagger(50, {
                 grid: [columns, rows],
-                from: index
+                from: index,
+                easing: 'easeOutQuad'
             })
         })
     }
